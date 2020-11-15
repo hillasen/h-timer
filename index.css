@@ -1,0 +1,42 @@
+body{
+    background-color: #fff8cd;
+}
+.header{
+    height: 80px;
+}
+.main{
+    height: 100%;
+}
+.clock_box{
+    height: 20%;
+    width: 100%;
+}
+.clock{
+    position: relative;
+    left: 50%;
+    margin-left: -250px;
+}
+.time{
+    text-align: center;
+}
+.min{
+    height: 80px;
+    width: 80px;
+    background-color:transparent;
+    font-size: 70px;
+}
+.dot{
+    display: inline;
+}
+.sec{
+    height: 80px;
+    width: 80px;
+    background-color:transparent;
+    font-size: 70px;
+}
+.set_t{
+    margin-top: 10px;
+    height: 30px;
+    background-color: white;
+    border: solid 1px black;
+}

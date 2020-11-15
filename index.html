@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>H-Timer</title>
+</head>
+<body onload="init();">
+
+    <div class="header">
+        <h1>H-Timer</h1>
+        <input type="checkbox" class="al">알람 키기</input>
+    </div>
+    <div class="main">
+        <div class="clock_box">
+            <canvas class="clock" width="1080" height="1080" style="width : 500px; height : 500px"></canvas>
+            <div class="time">
+                <div class="set_time">
+                    <input type="text" class="min" maxlength="2" value="0">
+                    <h1 class="dot">:</h1>
+                    <input type="text" class="sec" maxlength="2" value="11">
+                </div>
+                <button class="set_t" onclick="timeGo();">시작</button>
+                <button class="set_t" onclick="clearTime();">초기화</button>
+                <h3 class="pt">00</h3>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
