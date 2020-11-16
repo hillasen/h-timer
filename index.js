@@ -38,6 +38,20 @@ function clock(){
     pt_q.innerHTML = innerHTML = parseInt(pt/60) + " 분 " + parseInt(pt%60) + " 초 지남";
     if (canvas.getContext) {
         var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "rgb(255, 255, 255 )";
+
+
+        ctx.beginPath();
+        ctx.moveTo(0,0);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.moveTo(500,500);
+
+        ctx.arc(500,500,400,1.5*Math.PI, (i-90)*(Math.PI/180),false);
+        ctx.fill();
+        ctx.closePath();
+        ctx.save();
+        //
         ctx.fillStyle = "rgb(236, 88, 88 )";
         ctx.beginPath();
         ctx.moveTo(0,0);
@@ -55,7 +69,7 @@ function clock(){
         ctx.arc(500,500,100,0*Math.PI, 360*(Math.PI/180),true);
         ctx.fill();
     changeTime();
-    if(i == 360){
+    if(i >= 360){
         clearInterval(inter)
         if(al.checked == true){
             finish_bell.play();
